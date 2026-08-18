@@ -1,0 +1,12 @@
+name: stack-flask-sqlalchemy-dev
+version: 1.0.0
+description: Flask + SQLAlchemy stack dev plugin for Agents Store. Integration patterns for app factory wiring, blueprint-model coordination, Flask-Login + SQLAlchemy auth, Jinja2 + query data, and full-feature recipes.
+author: Agents Store
+tags:
+  - stack
+  - flask-sqlalchemy
+  - dev
+  - agents-store
+  - flask
+  - sqlalchemy
+  - python

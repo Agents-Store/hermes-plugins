@@ -1,0 +1,12 @@
+name: flask-dev
+version: 1.0.0
+description: Flask dev plugin for Agents Store. Application factory patterns, blueprint organization, Jinja2 templates, Flask CLI recipes, and troubleshooting for developers building with Flask.
+author: Agents Store
+tags:
+  - flask
+  - dev
+  - agents-store
+  - python
+  - jinja2
+  - blueprints
+  - web-framework

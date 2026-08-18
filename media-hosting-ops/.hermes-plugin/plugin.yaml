@@ -1,0 +1,10 @@
+name: media-hosting-ops
+version: 1.0.0
+description: Media hosting operations plugin. Upload images by public URL to MinIO-based media hosting via the uploadImageToMinio MCP tool.
+author: AGENTS.STORE
+tags:
+  - media-hosting
+  - minio
+  - image-upload
+  - ops
+  - agents-store

@@ -1,0 +1,12 @@
+name: sqlalchemy-dev
+version: 1.0.0
+description: SQLAlchemy dev plugin for Agents Store. Model definition patterns, relationship mapping, query optimization, Alembic migrations, and troubleshooting for developers building with SQLAlchemy 2.0+.
+author: Agents Store
+tags:
+  - sqlalchemy
+  - dev
+  - agents-store
+  - python
+  - orm
+  - alembic
+  - database
