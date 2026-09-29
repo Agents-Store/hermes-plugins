@@ -29,7 +29,6 @@ cp -r skills ~/.hermes/plugins/deep-research-ops/
 ## Not carried over
 
 - 6 command(s) — no Hermes manifest equivalent
-- MCP servers — not generated for Hermes
 
 ## Source
 
