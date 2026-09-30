@@ -1,6 +1,6 @@
 # nocobase (Hermes Agent plugin)
 
-DEPRECATED — superseded by nocobase-dev, which bundles the official nocobase/skills library and works through the nb CLI and REST API. The MCP server this plugin wires has no counterpart in nocobase-dev yet. NocoBase platform development plugin. Expert guidance on collections, fields, relations, workflows, UI blocks, plugin development, MCP-powered page management, data operations, and collection inspection for NocoBase applications.
+DEPRECATED — superseded by nocobase-dev, which bundles the official nocobase/skills library and works through the nb CLI and REST API. Its MCP server package (@nocobase/mcp-server) was withdrawn from npm and is no longer wired; the MCP commands and agents work only if you register your own server named `nocobase`. NocoBase platform development plugin. Expert guidance on collections, fields, relations, workflows, UI blocks, plugin development, MCP-powered page management, data operations, and collection inspection for NocoBase applications.
 
 ## Install
 
@@ -32,7 +32,6 @@ cp -r skills ~/.hermes/plugins/nocobase/
 
 - 2 agent(s) — no Hermes manifest equivalent
 - 8 command(s) — no Hermes manifest equivalent
-- MCP servers — not generated for Hermes
 
 ## Source
 
