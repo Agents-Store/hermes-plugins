@@ -1,6 +1,6 @@
 # nocodb-ops (Hermes Agent plugin)
 
-NocoDB ops plugin for Agents Store. Record management, views, reports, filtering, search, and data import/export for business users via MCP tools and CLI.
+NocoDB ops plugin for Agents Store. Record management, filtering (structured filters, exactDate date filters), sorting, reports, search, webhooks (events, payload, conditions), and data import/export for business users via the NocoDB MCP server (writes in batches of up to 100 records; extra tools on Cloud/licensed through listTools/callTool) and curl on the v3 API.
 
 ## Install
 
@@ -18,14 +18,14 @@ cp .hermes-plugin/plugin.yaml .hermes-plugin/__init__.py ~/.hermes/plugins/nocod
 cp -r skills ~/.hermes/plugins/nocodb-ops/
 ```
 
-## Skills (9)
+## Skills (10)
 
-- `cli-reference` — NocoDB CLI commands and nc command reference from the official NocoDB agent-skills package. Use when:
+- `cli-reference` — Command-line access to NocoDB data -- curl recipes on the Data API v3 (records, links, attachments) and Meta API v3, mapped to the commands of the official nocodb.sh script (installed with npx skills add nocodb/agent-skills). Loaded only on explicit cite. Use when:
 - "NocoDB CLI commands"
-- "nc command reference"
+- "NocoDB curl recipes"
 - "NocoDB agent-skills"
 - "what CLI commands are available"
-- "how to use nc command"
+- "nocodb.sh commands"
 
 - `examples` — NocoDB workflow examples, scenario walkthroughs, and practical patterns. Use when:
 - "show me a NocoDB example"
@@ -44,12 +44,13 @@ cp -r skills ~/.hermes/plugins/nocodb-ops/
 - "extract all records"
 - "download table data"
 
-- `mcp-patterns` — NocoDB MCP tools reference -- available tools, parameters, and usage patterns. Use when:
+- `mcp-patterns` — NocoDB MCP tools reference for data work -- which tools the server lists, which sit behind listTools/callTool, the Community vs Cloud/licensed contract, and the exact parameter shapes (100-record batches, sort objects, filter vs where, date sub-operators). Use when:
 - "what NocoDB tools are available?"
 - "how do I query records?"
 - "show me NocoDB MCP parameters"
 - "which tool do I use for..."
 - "NocoDB tool reference"
+- "listTools / callTool"
 
 - `record-management` — Create, read, update, and delete NocoDB records. Use when:
 - "add a new record"
@@ -59,6 +60,7 @@ cp -r skills ~/.hermes/plugins/nocodb-ops/
 - "bulk import data"
 - "search and edit records"
 - "how many records match..."
+- "restore deleted records"
 
 - `search-filter` — NocoDB filter syntax reference for searching, filtering, and sorting records. Use when:
 - "filter records"
@@ -99,6 +101,15 @@ cp -r skills ~/.hermes/plugins/nocodb-ops/
 - "monthly summary"
 - "count by category"
 - "average order value"
+
+- `webhooks` — Use NocoDB webhooks from the business side — which events exist, how to set one up in the UI, what the receiving system gets (payload), conditions, the Button trigger, and testing. Use when:
+- "trigger something when a record changes"
+- "send NocoDB data to n8n / another system"
+- "set up a webhook in NocoDB"
+- "what does the NocoDB webhook payload look like"
+- "fire a webhook from a button"
+- "webhook only when status becomes ..."
+- "list the webhooks on a table"
 
 
 ## Not carried over
